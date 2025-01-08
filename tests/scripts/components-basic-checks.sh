@@ -117,3 +117,15 @@ component_tf_psa_crypto_check_test_helpers () {
     msg "unit test: translate_ciphers.py"
     python3 -m unittest framework/scripts/translate_ciphers.py 2>&1
 }
+
+component_tf_psa_crypto_check_doxy_blocks () {
+    msg "Check: doxygen markup outside doxygen blocks" # < 1s
+    $FRAMEWORK/scripts/check-doxy-blocks.pl
+}
+
+component_tf_psa_crypto_check_doxygen_warnings () {
+    msg "Check: doxygen warnings (builds the documentation)" # ~ 3s
+    cmake -DGEN_FILES=ON .
+    make
+    $FRAMEWORK/scripts/doxygen.sh
+}
