@@ -1665,7 +1665,7 @@
  *
  * Uncomment this macro to enable restartable ECC computations.
  */
-//#define MBEDTLS_ECP_RESTARTABLE
+// #define MBEDTLS_ECP_RESTARTABLE
 
 /**
  * Uncomment to enable using new bignum code in the ECC modules.
@@ -1673,7 +1673,7 @@
  * \warning This is currently experimental, incomplete and therefore should not
  * be used in production.
  */
-//#define MBEDTLS_ECP_WITH_MPI_UINT
+// #define MBEDTLS_ECP_WITH_MPI_UINT
 
 /**
  * \def MBEDTLS_GCM_LARGE_TABLE
