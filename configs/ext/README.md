@@ -1,10 +1,9 @@
 Summary
 -------
 
-The two files:
+The file:
 
 * crypto_config_profile_medium.h
-* tfm_mbedcrypto_config_profile_medium.h
 
 are copyright The Mbed TLS Contributors, and are distributed under the license normally
 used by Mbed TLS: a dual Apache 2.0 or GPLv2-or-later license.
@@ -12,8 +11,8 @@ used by Mbed TLS: a dual Apache 2.0 or GPLv2-or-later license.
 Background
 ----------
 
-The two files crypto_config_profile_medium.h and tfm_mbedcrypto_config_profile_medium.h
-are taken verbatim from the TF-M source code here:
+The file crypto_config_profile_medium.h is taken verbatim from the TF-M source
+code here:
 
 https://git.trustedfirmware.org/TF-M/trusted-firmware-m.git/tree/lib/ext/mbedcrypto/mbedcrypto_config
 
